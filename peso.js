@@ -6,7 +6,7 @@ form.addEventListener("submit", (e) =>{
 
     const nome = form.inNome.value
     const masculino = form.inMasculino.checked
-    const altura = Number(form.inAltura.valeu)
+    const altura = Number(form.inAltura.value)
     
    let peso
     if(masculino){
