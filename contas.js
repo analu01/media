@@ -1,0 +1,26 @@
+const form = document.querySelector("form")
+const resp = document.querySelector("#outResp1")
+const resp1 = document.querySelector("#outResp2")
+
+let numContas = 0
+let valorTotal = 0
+let resposta = ""
+
+form.addEventListener("submit", (e) =>{
+    e.preventDefault()
+
+const descrição = frm.inDescrição.value
+const valor = Number(frm.inValor.value)
+
+numContas++
+valTotal = valTotal + valor
+
+resposta = resposta + descrição + " - R$: " + valor.toFixed(2) + "\n"
+
+resp1.innerText = `${resposta}--------------------------------`
+resp1.innerText = `${numContas} Conta(s) - Total R$: ${valTotal.toFixed(2)} `
+
+frm.inDescrição.value = ""
+frm.inValor.value = ""
+frm.inDescrição.value.focus()
+})
